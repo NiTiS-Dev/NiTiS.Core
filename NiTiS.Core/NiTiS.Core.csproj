@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>NiTiS.Core</AssemblyName>
+
+		<Description>
+			Core library for others NiTiS's libs
+		</Description>
+		
+		<PackageTags>NiTiS;Math;Extensions</PackageTags>
+	</PropertyGroup>
+	
+	<Import Project="../Meta.props" />
+</Project>
