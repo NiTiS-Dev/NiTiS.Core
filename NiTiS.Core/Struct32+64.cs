@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
 namespace NiTiS.Core;
 
@@ -52,6 +53,19 @@ public unsafe struct Struct32
 	public nuint UIntPtr;
 	[FieldOffset(0)]
 	public nint IntPtr;
+
+#if NET5_0_OR_GREATER
+	// float16 to left
+	[FieldOffset(0)]
+	public Half LeftFloat16;
+	// float16 to right
+	[FieldOffset(2)]
+	public Half Float16;
+#endif
+
+	// float32
+	[FieldOffset(0)]
+	public float Single;
 }
 /// <summary>
 /// Collection of bits, keeps the same bit positions for all primitive types
@@ -120,4 +134,25 @@ public unsafe struct Struct64
 	public nuint RightUIntPtr;
 	[FieldOffset(4)]
 	public nint RightIntPtr;
+
+
+#if NET5_0_OR_GREATER
+	// float16 to left
+	[FieldOffset(0)]
+	public Half LeftFloat16;
+	// float16 to right
+	[FieldOffset(2)]
+	public Half Float16;
+#endif
+
+	// float32 to left
+	[FieldOffset(0)]
+	public float LeftSingle;
+	// float32 to right
+	[FieldOffset(4)]
+	public float Single;
+
+	// float64
+	[FieldOffset(0)]
+	public double Double;
 }

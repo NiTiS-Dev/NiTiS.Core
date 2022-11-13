@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
 namespace NiTiS.Core;
 
@@ -53,4 +54,9 @@ public unsafe struct Struct16
 	public ushort UInt16;
 	[FieldOffset(0)]
 	public short Int16;
+
+#if NET5_0_OR_GREATER
+	[FieldOffset(0)]
+	public Half Float16;
+#endif
 }
