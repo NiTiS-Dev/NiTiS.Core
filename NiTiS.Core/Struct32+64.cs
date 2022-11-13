@@ -46,7 +46,7 @@ public unsafe struct Struct32
 	[FieldOffset(0)]
 	public uint UInt32;
 	[FieldOffset(0)]
-	public uint Int32;
+	public int Int32;
 
 	// native to left
 	[FieldOffset(0)]
@@ -65,7 +65,7 @@ public unsafe struct Struct32
 
 	// float32
 	[FieldOffset(0)]
-	public float Single;
+	public float Float32;
 }
 /// <summary>
 /// Collection of bits, keeps the same bit positions for all primitive types
@@ -110,12 +110,12 @@ public unsafe struct Struct64
 	[FieldOffset(4)]
 	public uint UInt32;
 	[FieldOffset(4)]
-	public uint Int32;
+	public int Int32;
 	// 32bit to left
 	[FieldOffset(0)]
 	public uint LeftUInt32;
 	[FieldOffset(0)]
-	public uint LeftInt32;
+	public int LeftInt32;
 	[FieldOffset(0)]
 
 	// 64bit
@@ -147,12 +147,12 @@ public unsafe struct Struct64
 
 	// float32 to left
 	[FieldOffset(0)]
-	public float LeftSingle;
+	public float LeftFloat32;
 	// float32 to right
 	[FieldOffset(4)]
-	public float Single;
+	public float Float32;
 
 	// float64
 	[FieldOffset(0)]
-	public double Double;
+	public double Float64;
 }
