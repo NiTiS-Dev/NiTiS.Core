@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<Version>3.0.2</Version>
 		<TargetFrameworks>net6.0;netstandard2.1;netcoreapp3.1;net48</TargetFrameworks>
@@ -7,7 +7,7 @@
 		<PackageVersion>$(Version)</PackageVersion>
 
 		<Copyright>Copyright (c) NiTiS-Dev and contributors</Copyright>
-		<PackageLicenseUrl>https://raw.githubusercontent.com/NiTiS-Dev/NiTiS.Core/singleton/LICENSE</PackageLicenseUrl>
+		<PackageLicenseUrl>https://raw.githubusercontent.com/NiTiS-Dev/NiTiS.IO/singleton/LICENSE</PackageLicenseUrl>
 
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
@@ -21,8 +21,8 @@
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>embedded</DebugType>
 
-		<RepositoryUrl>https://github.com/NiTiS-Dev/NiTiS.Core</RepositoryUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/NiTiS-Dev/meta/singleton/ntscr/core/original.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/NiTiS-Dev/NiTiS.IO</RepositoryUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/NiTiS-Dev/meta/singleton/ntscr/interaction/original.png</PackageIconUrl>
 	</PropertyGroup>
 
 	<ItemGroup Condition="$(TargetFramework) != 'net48'">
